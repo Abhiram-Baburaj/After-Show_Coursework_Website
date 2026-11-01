@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Movies - After Show</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-header {
+            text-align: center;
+            margin: 40px auto 20px auto;
+            color: #ffffff;
+            font-size: 36px;
+        }
+
+        .timeline-container {
+            max-width: 100%;
+            margin: 0 auto 100px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .timeline {
+            position: relative;
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: #bd442f;
+            top: 0;
+            bottom: 0;
+            left: 0%;
+            margin-left: -2px;
+            border-radius: 2px;
+            box-shadow: 0 0 10px rgba(189, 68, 47, 0.5);
+        }
+
+        .timeline-item {
+            padding: 10px 40px;
+            width: 90%;
+        }
+
+        .timeline-content {
+            background-color: #1b1a1a;
+            padding: 24px;
+            border-radius: 12px;
+        }
+
+        .timeline-content h2 {
+            color: #bd442f;
+            margin-top: 0;
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .watchlist {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .watchlist li {
+            color: #e1e4e5;
+            font-size: 15px;
+            padding: 8px 0;
+            border-bottom: 1px solid #222629;
+            font-family: Arial, sans-serif;
+        }
+
+        .empty-state {
+            color: #666;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* Mobile Layout */
+        @media screen and (max-width: 700px) {
+            .timeline::after {
+                left: 20px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 60px;
+                padding-right: 0;
+            }
+
+            .timeline-item:nth-child(odd),
+            .timeline-item:nth-child(even) {
+                left: 0;
+            }
+
+            .timeline-item:nth-child(odd)::after,
+            .timeline-item:nth-child(even)::after {
+                left: 10px;
+                right: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="index.html">After Show</a>
+        <nav>
+            <div class="navbarButton"><a href="index.html">HOME</a></div>
+            <div class="navbarButton"><a href="reviews.html">REVIEWS</a></div>
+            <div class="navbarButton"><a href="about.html">ABOUT</a></div>
+            <div class="navbarButton"><a href="contact.html">CONTACT</a></div>
+            <div class="navbarButton"><a href="credits.html">CREDITS</a></div>
+        </nav>
+    </header>
+
+    <div class="timeline-container">
+        <div class="mininavbar">
+            <a style="text-decoration: none;" href="reviews.html">
+                <h1 class="submit-btn" style="text-align: center; padding: 8px; border-radius: 20px;">
+                    All</h1>
+            </a>
+            <a style="text-decoration: none;" href="awards.html">
+                <h1 class="submit-btn" style="text-align: center; padding: 8px; border-radius: 20px;">
+                    After Show Awards</h1>
+            </a>
+            <a style="text-decoration: none;" href="moty.html">
+                <h1 class="submit-btn" style="text-align: center; padding: 8px; border-radius: 20px;">
+                    Movie Of the Year by Genre</h1>
+            </a>
+            <a style="text-decoration: none;" href="upcoming.html">
+                <h1 class="submit-btn"
+                    style="text-align: center; padding: 8px; border-radius: 20px;background-color: rgb(255, 116, 92)">
+                    Upcoming Movies List</h1>
+            </a>
+            <a style="text-decoration: none;" href="classics.html">
+                <h1 class="submit-btn"
+                    style="text-align: center; padding: 8px; border-radius: 20px;background-color: rgb(255, 116, 92);">
+                    Classics</h1>
+            </a>
+        </div>
+        <h1 class="page-header">Upcoming Movies</h1>
+        <p style="color: #ffffff; text-align: center;">Movies in red and bold is a cant-miss experience</p>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h2>November 2026</h2>
+                    <ul class="watchlist">
+                        <li style="color: #bd442f;font-weight: bold">Ramayana: Rise of a Legend</li>
+                        <li style="color: #bd442f;font-weight: bold">Godzilla Minus Zero</li>
+                        <li>The Cat in the Hat</li>
+                        <li>How to Rob a Bank</li>
+                        <li>The Hunger Games: Sunrise on the Reaping</li>
+                        <li>Hexed</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h2>December 2026</h2>
+                    <ul class="watchlist">
+                        <li style="color: #bd442f;font-weight: bold">Avengers: Doomsday</li>
+                        <li style="color: #bd442f;font-weight: bold">Dune: Part Three</li>
+                        <li>The Angry Birds Movie 3</li>
+                        <li>King</li>
+                        <li>Jumanji: Open World</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h2>January 2027</h2>
+                    <ul class="watchlist">
+                        <li>The Beekeeper 2</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h2>February 2027</h2>
+                    <ul class="watchlist">
+                        <li style="color: #bd442f;font-weight: bold">Ice Age: Boiling Point</li>
+                        <li>The Garfield Movie 2</li>
+                        <li>CoComelon: The Movie</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h2>March 2027</h2>
+                    <ul class="watchlist">
+                        <li>Gatto</li>
+                        <li>The Exorcist: Martyrs</li>
+                        <li style="color: #bd442f;font-weight: bold">Sonic the Hedgehog 4</li>
+                        <li style="color: #bd442f;font-weight: bold">Godzilla x Kong: Supernova</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h2>April 2027</h2>
+                    <ul class="watchlist">
+                        <li style="color: #bd442f;font-weight: bold">The Legend of Zelda</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h2>May 2027</h2>
+                    <ul class="watchlist">
+                        <li style="color: #bd442f;font-weight: bold">Anything But Ghosts</li>
+                        <li>Star Wars: Starfighter</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h2>June 2027</h2>
+                    <ul class="watchlist">
+                        <li style="color: #bd442f;font-weight: bold">How to Train Your Dragon 2</li>
+                        <li style="color: #bd442f;font-weight: bold">Spider-Man: Beyond the Spider-Verse</li>
+                        <li style="color: #bd442f;font-weight: bold">Shrek 5</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h2>July 2027</h2>
+                    <ul class="watchlist">
+                        <li style="color: #bd442f;font-weight: bold">Man of Tomorrow</li>
+                        <li style="color: #bd442f;font-weight: bold">A Minecraft Movie: Squared</li>
+                        <li style="color: #bd442f;font-weight: bold">A Quiet Place Part III</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h2>August 2027</h2>
+                    <p class="empty-state">No releases.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h2>September 2027</h2>
+                    <ul class="watchlist">
+                        <li>The Conjuring: First Communion</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h2>October 2027</h2>
+                    <ul class="watchlist">
+                        <li style="color: #bd442f;font-weight: bold">Terrifier 4</li>
+                        <li>The Haunting of Hotel Transylvania</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="about">
+        <p>After Show · Movies are better when we talk about them.</p>
+    </footer>
+</body>
+
+</html>
